@@ -1,0 +1,24 @@
+Problem Statement:
+A Maze is given as N*N binary matrix of blocks where source block is the upper left most block i.e., maze[0][0] and destination block is lower rightmost block i.e., maze[N-1][N-1]. A rat starts from source and has to reach the destination. The rat can move only in two directions: forward and down. 
+
+Example:
+
+Input:
+0 = wall, 1 = open area
+{1, 0, 0, 0}
+{1, 1, 0, 1}
+{0, 1, 0, 0}
+{1, 1, 1, 1}
+
+Output:
+{1, 0, 0, 0}
+{1, 1, 0, 0}
+{0, 1, 0, 0}
+{0, 1, 1, 1}
+All entries in solution path are marked as 1.
+
+Time Complexity: O(2^(n^2)). 
+The recursion can run upper-bound 2^(n^2) times.
+
+Space Complexity: O(n^2). 
+Output matrix is required so an extra space of size n*n is needed.
